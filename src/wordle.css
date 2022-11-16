@@ -1,3 +1,64 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+#keyboard {
+  margin-top: 5rem;
+}
+
+div .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+div .cell {
+  border-radius: 3px;
+  border-color: black;
+  border-style: solid;
+  background-color: antiquewhite;
+  height: 5rem;
+  width: 5rem;
+}
+div .keyboardrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+div .keyboardcell {
+  border-radius: 3px;
+  border-color: black;
+  border-style: solid;
+  background-color: antiquewhite;
+  height: 5rem;
+  width: 5rem;
+}
 
 /*# sourceMappingURL=wordle.css.map */

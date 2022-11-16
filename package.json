@@ -1,0 +1,19 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "Final Webdev Wordle project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/wordle.scss src/wordle.css",
+    "dev": "npm run dev-server & npm run dev-sass"
+  },
+  "author": "Max Elbirt",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -19,46 +19,63 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   height: 100%;
   width: 100%;
   margin-top: 5rem;
 }
 
 #keyboard {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
-div .row {
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.keyboardcell {
+  border-radius: 3px;
+  border-color: #D3D6DA;
+  border-style: solid;
+  background-color: #D3D6DA;
+  height: 4rem;
+  width: 3rem;
+}
+
+#enter {
+  width: 5rem;
+}
+
+#escape {
+  width: 5rem;
+}
+
+.keyboardrow {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 2rem;
-}
-div .cell {
-  border-radius: 3px;
-  border-color: black;
-  border-style: solid;
-  background-color: antiquewhite;
-  height: 5rem;
-  width: 5rem;
-}
-div .keyboardrow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-div .keyboardcell {
-  border-radius: 3px;
-  border-color: black;
-  border-style: solid;
-  background-color: antiquewhite;
-  height: 5rem;
-  width: 5rem;
+  margin-bottom: 5px;
+  gap: 5px;
 }
 
-/*# sourceMappingURL=wordle.css.map */
+input {
+  caret-color: transparent;
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+  border-color: #D3D6DA;
+  border-style: solid;
+  padding: 0;
+  text-align: center;
+}
+input:focus-visible {
+  border-color: black;
+  border-width: 5px;
+}/*# sourceMappingURL=wordle.css.map */
